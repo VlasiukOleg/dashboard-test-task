@@ -16,7 +16,7 @@
     <div class="container">
       <!-- Dashboard -->
       <div class="dashboard-wrap">
-        <header>
+        <header class="dashboard-header">
           <a class="logo" href="./index.html"
             ><svg width="37" height="37">
               <use href="./src/img/icons.svg#icon-logo"></use>
@@ -86,12 +86,51 @@
           </div>
         </header>
 
-        <main>
-          <section class="sidebar-content">
-            <p>Hello Evano 👋🏼</p>
-            <div class="customers"></div>
-          </section>
-        </main>
+        <div class="content-wrap">
+          <main>
+            <section class="sidebar-info">
+              <p>Hello Evano 👋🏼</p>
+              <div class="customers">
+                <h1 class="customers__title">All Customers</h1>
+                <p class="customers__description">Active Members</p>
+                <div class="customers__search">
+                  <input type="text" name="search" />
+                </div>
+                <table class="customers__table">
+                  <thead>
+                    <tr>
+                      <th>Customer Name</th>
+                      <th>Маршрут</th>
+                      <th>Phone Number</th>
+                      <th>Email</th>
+                      <th>Country</th>
+                      <th>Status</th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <td>Jane Cooper</td>
+                      <td>Microsoft</td>
+                      <td>(225) 555-0118</td>
+                      <td>jane@microsoft.com</td>
+                      <td>United States</td>
+                      <td><p class="status">Active</p></td>
+                    </tr>
+                    <tr>
+                      <td>Floyd Miles</td>
+                      <td>Yahoo</td>
+                      <td>(205) 555-0100</td>
+                      <td>floyd@yahoo.com</td>
+                      <td>Kiribati</td>
+                      <td><p class="status">Inactive</p></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+          </main>
+        </div>
       </div>
     </div>
   </body>

@@ -1,3 +1,12 @@
+.status {
+  padding: 4px 18px;
+  border: 2px solid #008767;
+  border-radius: 4px;
+  outline: none;
+  background-color: #fff;
+  color: #000;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   font-size: 14px;
@@ -54,8 +63,50 @@ a {
 
 .dashboard-wrap {
   display: flex;
+  align-items: stretch;
 }
 
-.sidebar-content {
+.content-wrap {
+  padding: 41px 95px 258px 71px;
   background-color: #fafbff;
+  flex: 1;
+}
+
+.dashboard-header {
+  max-width: 306px;
+  padding: 36px 28px 76px 28px;
+}
+
+.customers {
+  padding: 30px 44px 40px 38px;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+.customers__table {
+  border-collapse: collapse;
+}
+.customers__table th {
+  text-align: left;
+  padding: 14px 20px 14px 0;
+  border-bottom: 1px solid #eeeeee;
+}
+.customers__table td {
+  padding: 20px 20px 20px 0;
+  border-bottom: 1px solid #eeeeee;
+}
+.customers__table thead > tr > th:nth-child(1) {
+  padding-right: 57px;
+}
+.customers__table thead > tr > th:nth-child(2) {
+  padding-right: 61px;
+}
+.customers__table thead > tr > th:nth-child(3) {
+  padding-right: 52px;
+}
+.customers__table thead > tr > th:nth-child(4) {
+  padding-right: 168px;
+}
+.customers__table thead > tr > th:nth-child(5) {
+  padding-right: 96px;
 }/*# sourceMappingURL=main.css.map */

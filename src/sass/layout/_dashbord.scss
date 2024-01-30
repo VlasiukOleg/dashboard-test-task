@@ -1,7 +1,64 @@
 .dashboard-wrap {
   display: flex;
+  align-items: stretch;
 }
 
-.sidebar-content {
+.content-wrap {
+  padding: 41px 95px 258px 71px;
   background-color: $secondaryBgColor;
+  flex: 1;
+}
+
+.sidebar-info {
+}
+
+.dashboard-header {
+  max-width: 306px;
+  padding: 36px 28px 76px 28px;
+}
+
+.customers {
+  padding: 30px 44px 40px 38px;
+
+  background-color: $primaryBgColor;
+  border-radius: 20px;
+}
+
+.customers__table {
+  border-collapse: collapse;
+
+  th {
+    text-align: left;
+    padding: 14px 20px 14px 0;
+    border-bottom: 1px solid $tableBorderColor;
+  }
+
+  td {
+    padding: 20px 20px 20px 0;
+    border-bottom: 1px solid $tableBorderColor;
+  }
+
+  thead > tr > th:nth-child(1) {
+    padding-right: 57px;
+  }
+
+  thead > tr > th:nth-child(2) {
+    padding-right: 61px;
+  }
+
+  thead > tr > th:nth-child(3) {
+    padding-right: 52px;
+  }
+
+  thead > tr > th:nth-child(4) {
+    padding-right: 168px;
+  }
+
+  thead > tr > th:nth-child(5) {
+    padding-right: 96px;
+  }
+}
+
+.status {
+  @extend %button;
 }
