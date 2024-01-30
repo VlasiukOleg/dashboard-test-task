@@ -1,7 +1,7 @@
 // Background-colors
 $primaryBgColor: #fff;
 $secondaryBgColor: #fafbff;
-$activeBtnBgColor: #16c098;
+$activeBtnBgColor: #16c09861;
 $inActiveBtnBgColor: #ffc5c5;
 $activeNavLinkBgColor: #5932ea;
 
@@ -10,14 +10,16 @@ $primaryBlackColor: #000;
 $secondaryBlackColor: #292d32;
 $primaryGreyColor: #b5b7c0;
 $secondaryGreyColor: #9197b3;
+$userGreyColor: #757575;
+$logoGreyColor: #838383;
 $activeBtnColor: #008767;
 $inActiveBtnColor: #df0404;
 $tableBorderColor: #eeeeee;
 
 // Border
-$borderBtn: 2px solid $activeBtnColor;
+$borderActiveBtn: 2px solid $activeBtnColor;
+$borderInActiveBtn: 2px solid $inActiveBtnColor;
 
 // Border-radius
-
 $borderRadiusBtn: 4px;
 $borderRadiusActiveLink: 8px;

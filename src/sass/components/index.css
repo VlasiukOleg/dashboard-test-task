@@ -14,4 +14,20 @@
   .container {
     max-width: 420px;
   }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 26px;
+  font-weight: 600;
+  color: inherit;
+}
+.logo .logo__icon {
+  margin-right: 8px;
+}
+.logo span {
+  font-size: 10px;
+  font-weight: 500;
+  align-self: flex-end;
 }/*# sourceMappingURL=index.css.map */

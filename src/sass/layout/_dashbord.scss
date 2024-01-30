@@ -3,18 +3,67 @@
   align-items: stretch;
 }
 
+.dashboard-header {
+  max-width: 306px;
+  padding: 36px 28px 76px 28px;
+}
+
 .content-wrap {
   padding: 41px 95px 258px 71px;
   background-color: $secondaryBgColor;
   flex: 1;
 }
 
-.sidebar-info {
+.sidebar-nav {
+  margin-bottom: 598px;
 }
 
-.dashboard-header {
-  max-width: 306px;
-  padding: 36px 28px 76px 28px;
+.sidebar-nav__item {
+  margin-bottom: 40px;
+}
+
+.sidebar-nav__item:last-child {
+  margin-bottom: 0px;
+}
+
+.sidebar-nav__link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 11px 8px;
+
+  color: $secondaryGreyColor;
+
+  div {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.sidebar-nav__icon {
+  margin-right: 16px;
+}
+
+.sidebar-nav__link--current {
+  background-color: $activeNavLinkBgColor;
+  color: $primaryBgColor;
+  border-radius: $borderRadiusActiveLink;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+}
+
+.user__avatar {
+  margin-right: 12px;
+}
+
+.user__job {
+  font-size: 12px;
+  font-weight: 400;
+  color: $userGreyColor;
 }
 
 .customers {
@@ -26,6 +75,7 @@
 
 .customers__table {
   border-collapse: collapse;
+  margin-bottom: 30px;
 
   th {
     text-align: left;
@@ -59,6 +109,27 @@
   }
 }
 
-.status {
+.customer__status--active {
   @extend %button;
+  color: $activeBtnColor;
+  background-color: $activeBtnBgColor;
+  border: $borderActiveBtn;
+}
+
+.customer__status--inActive {
+  @extend %button;
+  color: $inActiveBtnColor;
+  background-color: $inActiveBtnBgColor;
+  border: $borderInActiveBtn;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pagination__list {
+  display: flex;
+  gap: 12px;
 }

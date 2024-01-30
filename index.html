@@ -18,59 +18,71 @@
       <div class="dashboard-wrap">
         <header class="dashboard-header">
           <a class="logo" href="./index.html"
-            ><svg width="37" height="37">
+            ><svg width="37" height="37" class="logo__icon">
               <use href="./src/img/icons.svg#icon-logo"></use>
             </svg>
-            Dashboard<span>v.01</span></a
+            <div>Dashboard<span>v.01</span></div></a
           >
           <nav class="sidebar-nav">
             <ul class="sidebar-nav__list">
               <li class="sidebar-nav__item">
                 <a class="sidebar-nav__link" href="#"
-                  ><svg width="24" height="24">
+                  ><div><svg width="24" height="24" class="sidebar-nav__icon">
                     <use href="./src/img/icons.svg#icon-key"></use>
                   </svg>
-                  Dashboard</a
+                  Dashboard</div></a
                 >
               </li>
               <li class="sidebar-nav__item">
                 <a class="sidebar-nav__link" href="#"
-                  ><svg width="24" height="24">
+                  ><div>
+                    <svg width="24" height="24" class="sidebar-nav__icon">
                     <use href="./src/img/icons.svg#icon-product"></use>
-                  </svg>
-                  Product</a
+                    </svg>
+                  Product
+                  </div><svg width="16" height="16">
+                    <use href="./src/img/icons.svg#icon-chevron-right"></use>
+                  </svg></a
                 >
               </li>
               <li class="sidebar-nav__item">
-                <a class="sidebar-nav__link" href="#"
-                  ><svg width="24" height="24">
+                <a class="sidebar-nav__link sidebar-nav__link--current" href="#"
+                  ><div><svg width="24" height="24" class="sidebar-nav__icon">
                     <use href="./src/img/icons.svg#icon-customers"></use>
                   </svg>
-                  Customers</a
+                  Customers</div><svg width="16" height="16">
+                    <use href="./src/img/icons.svg#icon-chevron-right-current"></use>
+                  </svg></a
                 >
               </li>
               <li class="sidebar-nav__item">
                 <a class="sidebar-nav__link" href="#"
-                  ><svg width="24" height="24">
+                  ><div><svg width="24" height="24" class="sidebar-nav__icon">
                     <use href="./src/img/icons.svg#icon-income"></use>
                   </svg>
-                  Income</a
+                  Income</div><svg width="16" height="16">
+                    <use href="./src/img/icons.svg#icon-chevron-right"></use>
+                  </svg></a
                 >
               </li>
               <li class="sidebar-nav__item">
                 <a class="sidebar-nav__link" href="#"
-                  ><svg width="24" height="24">
+                  ><div><svg width="24" height="24" class="sidebar-nav__icon">
                     <use href="./src/img/icons.svg#icon-promote"></use>
                   </svg>
-                  Promote</a
+                  Promote</div><svg width="16" height="16">
+                    <use href="./src/img/icons.svg#icon-chevron-right"></use>
+                  </svg></a
                 >
               </li>
               <li class="sidebar-nav__item">
                 <a class="sidebar-nav__link" href="#"
-                  ><svg width="24" height="24">
+                  ><div><svg width="24" height="24" class="sidebar-nav__icon">
                     <use href="./src/img/icons.svg#icon-help"></use>
                   </svg>
-                  Help</a
+                  Help</div><svg width="16" height="16">
+                    <use href="./src/img/icons.svg#icon-chevron-right"></use>
+                  </svg></a
                 >
               </li>
             </ul>
@@ -81,8 +93,11 @@
               alt="Evano Project Manager"
               class="user__avatar"
             />
-            <p class="user__name">Evano</p>
-            <p class="user__job">Project Manager</p>
+            <div class="user__info">
+               <p class="user__name">Evano</p>
+              <p class="user__job">Project Manager</p>  
+            </div>
+           
           </div>
         </header>
 
@@ -100,7 +115,7 @@
                   <thead>
                     <tr>
                       <th>Customer Name</th>
-                      <th>Маршрут</th>
+                      <th>Company</th>
                       <th>Phone Number</th>
                       <th>Email</th>
                       <th>Country</th>
@@ -115,7 +130,7 @@
                       <td>(225) 555-0118</td>
                       <td>jane@microsoft.com</td>
                       <td>United States</td>
-                      <td><p class="status">Active</p></td>
+                      <td><p class="customer__status--active">Active</button></p>
                     </tr>
                     <tr>
                       <td>Floyd Miles</td>
@@ -123,10 +138,74 @@
                       <td>(205) 555-0100</td>
                       <td>floyd@yahoo.com</td>
                       <td>Kiribati</td>
-                      <td><p class="status">Inactive</p></td>
+                      <td><p class="customer__status--inActive">Inactive</p></td>
+                    </tr>
+                     <tr>
+                      <td>Jane Cooper</td>
+                      <td>Microsoft</td>
+                      <td>(225) 555-0118</td>
+                      <td>jane@microsoft.com</td>
+                      <td>United States</td>
+                      <td><p class="customer__status--active">Active</button></p>
+                    </tr>
+                    <tr>
+                      <td>Floyd Miles</td>
+                      <td>Yahoo</td>
+                      <td>(205) 555-0100</td>
+                      <td>floyd@yahoo.com</td>
+                      <td>Kiribati</td>
+                      <td><p class="customer__status--inActive">Inactive</p></td>
+                    </tr>
+                     <tr>
+                      <td>Jane Cooper</td>
+                      <td>Microsoft</td>
+                      <td>(225) 555-0118</td>
+                      <td>jane@microsoft.com</td>
+                      <td>United States</td>
+                      <td><p class="customer__status--active">Active</button></p>
+                    </tr>
+                    <tr>
+                      <td>Floyd Miles</td>
+                      <td>Yahoo</td>
+                      <td>(205) 555-0100</td>
+                      <td>floyd@yahoo.com</td>
+                      <td>Kiribati</td>
+                      <td><p class="customer__status--inActive">Inactive</p></td>
+                    </tr>
+                     <tr>
+                      <td>Jane Cooper</td>
+                      <td>Microsoft</td>
+                      <td>(225) 555-0118</td>
+                      <td>jane@microsoft.com</td>
+                      <td>United States</td>
+                      <td><p class="customer__status--active">Active</button></p>
+                    </tr>
+                    <tr>
+                      <td>Floyd Miles</td>
+                      <td>Yahoo</td>
+                      <td>(205) 555-0100</td>
+                      <td>floyd@yahoo.com</td>
+                      <td>Kiribati</td>
+                      <td><p class="customer__status--inActive">Inactive</p></td>
                     </tr>
                   </tbody>
                 </table>
+                <div class="pagination">
+                  <p class="pagination__data">Showing data 1 to 8 of  256K entries</p>
+                  <div>
+                    <ul class="pagination__list">
+                      <li class="pagination__item"><button type="button"><</button></li>
+                      <li class="pagination__item"><button type="button">1</button></li>
+                      <li class="pagination__item"><button type="button">2</button></li>
+                      <li class="pagination__item"><button type="button">3</button></li>
+                      <li class="pagination__item"><button type="button">4</button></li>
+                      <li class="pagination__item"><button type="button">...</button></li>
+                      <li class="pagination__item"><button type="button">40</button></li>
+                      <li class="pagination__item"><button type="button">></button></li>
+
+                    </ul>
+                  </div>
+                </div>
               </div>
             </section>
           </main>
