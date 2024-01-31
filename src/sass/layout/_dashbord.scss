@@ -1,39 +1,67 @@
 .dashboard-wrap {
   display: flex;
   position: relative;
-
-  @media screen and (max-width: 767px) {
-    display: block;
-  }
 }
 
 .dashboard-header {
   max-width: 306px;
   padding: 36px 28px 76px 28px;
 
-  @media screen and (max-width: 767px) {
-    display: none;
+  @media screen and (max-width: 1020px) {
+    opacity: 0;
     position: absolute;
     z-index: 1;
     top: 0;
     left: 0;
+
+    transform: translateX(-100%);
+
     background-color: $primaryBgColor;
     border-right: 2px solid $primaryBlackColor;
 
-    overflow-y: scroll;
+    overflow-y: auto;
+
+    transition: transform 250ms ease-in-out;
+  }
+
+  @media screen and (max-width: 1170px) {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
 .dashboard-header.is-open {
-  display: block;
+  height: 100%;
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .sidebar-nav {
   margin-bottom: 598px;
+
+  @media screen and (max-width: 1170px) {
+    margin-bottom: 400px;
+  }
+
+  @media screen and (max-width: 1021px) {
+    margin-bottom: 50px;
+  }
 }
 
 .sidebar-nav__item {
   margin-bottom: 20px;
+
+  @media screen and (max-width: 1290px) {
+    font-size: 12px;
+  }
+
+  @media screen and (max-width: 1170px) {
+    margin-bottom: 15px;
+  }
+
+  @media screen and (max-width: 1021px) {
+    margin-bottom: 12px;
+  }
 }
 
 .sidebar-nav__item:last-child {
@@ -57,6 +85,10 @@
 
 .sidebar-nav__icon {
   margin-right: 16px;
+
+  @media screen and (max-width: 1170px) {
+    margin-right: 10px;
+  }
 }
 
 .sidebar-nav__link--current {
@@ -68,10 +100,18 @@
 .user {
   display: flex;
   align-items: center;
+
+  @media screen and (max-width: 1170px) {
+    display: block;
+  }
 }
 
 .user__avatar {
   margin-right: 12px;
+
+  @media screen and (max-width: 1170px) {
+    margin-right: 8px;
+  }
 }
 
 .user__job {
@@ -84,9 +124,24 @@
 
 .content-wrap {
   position: relative;
-  padding: 41px 95px 258px 71px;
+  padding: 41px 95px 41px 71px;
   background-color: $secondaryBgColor;
   flex: 1;
+
+  @media screen and (max-width: 1290px) {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+  @media screen and (max-width: 1170px) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @media screen and (max-width: 885px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 .customers {
@@ -94,11 +149,24 @@
 
   background-color: $primaryBgColor;
   border-radius: 20px;
+
+  @media screen and (max-width: 885px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 .content-label {
   margin-bottom: 51px;
   font-size: 24px;
+
+  @media screen and (max-width: 1290px) {
+    font-size: 22px;
+  }
+
+  @media screen and (max-width: 725px) {
+    font-size: 18px;
+  }
 }
 
 .customers__inner {
@@ -111,10 +179,26 @@
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 7px;
+
+  @media screen and (max-width: 1290px) {
+    font-size: 20px;
+  }
+
+  @media screen and (max-width: 725px) {
+    font-size: 16px;
+  }
 }
 
 .customers__description {
   color: $primaryTextGreenColor;
+
+  @media screen and (max-width: 1290px) {
+    font-size: 12px;
+  }
+
+  @media screen and (max-width: 725px) {
+    font-size: 10px;
+  }
 }
 
 .search-field {
@@ -127,6 +211,11 @@
 
   background-color: $searchInputBgColor;
   border: $borderRadiusSearchInput;
+
+  @media screen and (max-width: 725px) {
+    padding: 8px 6px 8px 32px;
+    max-width: 190px;
+  }
 }
 
 .search-field__input::placeholder {
@@ -136,9 +225,16 @@
 
 .search-field__icon {
   position: absolute;
+  width: 24px;
+  height: 24px;
   top: 50%;
   transform: translateY(-50%);
   left: 8px;
+
+  @media screen and (max-width: 725px) {
+    width: 18px;
+    height: 18px;
+  }
 }
 
 .customers__table {
@@ -147,16 +243,33 @@
   margin-bottom: 30px;
   margin-top: 40px;
 
+  @media screen and (max-width: 1290px) {
+    font-size: 12px;
+  }
+
+  @media screen and (max-width: 725px) {
+    font-size: 10px;
+    margin-top: 20px;
+  }
+
   th {
     text-align: left;
     padding: 14px 0;
     border-bottom: 1px solid $tableBorderColor;
     color: $primaryGreyColor;
+
+    @media screen and (max-width: 725px) {
+      padding: 10px 5px;
+    }
   }
 
   td {
     padding: 20px 0;
     border-bottom: 1px solid $tableBorderColor;
+
+    @media screen and (max-width: 725px) {
+      padding: 10px 5px;
+    }
   }
 
   thead > tr > th:nth-child(1) {
@@ -173,6 +286,10 @@
 
   thead > tr > th:nth-child(4) {
     width: 207px;
+
+    @media screen and (max-width: 1290px) {
+      width: 160px;
+    }
   }
 
   thead > tr > th:nth-child(5) {
@@ -203,6 +320,10 @@
 
 .pagination__data {
   color: $primaryGreyColor;
+
+  @media screen and (max-width: 725px) {
+    font-size: 12px;
+  }
 }
 
 .pagination__list {
@@ -222,76 +343,4 @@
 .pagination__button--no-background {
   background-color: transparent;
   border: none;
-}
-
-// Mobile - menu
-
-.menu-button {
-  position: absolute;
-  top: 77px;
-  left: 85px;
-  z-index: 2;
-
-  padding: 3px;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-
-  @media screen and (min-width: 767px) {
-    display: none;
-    top: 0;
-    left: 0;
-  }
-
-  svg {
-    width: 24px;
-    height: 24px;
-  }
-}
-
-.icon-menu {
-  @media screen and (max-width: 768px) {
-    display: block;
-  }
-}
-
-.icon-cross {
-  display: none;
-}
-
-.menu-button.is-open {
-  top: 9px;
-  left: 231px;
-
-  svg {
-    width: 20px;
-    height: 20px;
-  }
-}
-
-.menu-button.is-open .icon-menu {
-  display: none;
-}
-
-.menu-button.is-open .icon-cross {
-  display: block;
-}
-
-.menu-backdrop {
-  display: none;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  top: 0;
-}
-
-.menu-backdrop.is-open {
-  display: block;
-}
-
-.no-scroll {
-  overflow: hidden;
 }

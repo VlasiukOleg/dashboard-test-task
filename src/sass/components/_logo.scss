@@ -8,8 +8,16 @@
   font-weight: 600;
   color: inherit;
 
-  .logo__icon {
-    margin-right: 8px;
+  @media screen and (max-width: 1290px) {
+    font-size: 22px;
+  }
+
+  @media screen and (max-width: 1170px) {
+    margin-bottom: 44px;
+  }
+
+  @media screen and (max-width: 1021px) {
+    margin-bottom: 18px;
   }
 
   span {
@@ -18,5 +26,22 @@
     font-size: 10px;
     font-weight: 500;
     color: $logoGreyColor;
+  }
+
+  div {
+    @media screen and (max-width: 1170px) {
+      display: none;
+    }
+  }
+}
+
+.logo__icon {
+  margin-right: 8px;
+  width: 37px;
+  height: 37px;
+
+  @media screen and (max-width: 1290px) {
+    width: 33px;
+    height: 33px;
   }
 }
