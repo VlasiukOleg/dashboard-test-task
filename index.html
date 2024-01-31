@@ -103,14 +103,22 @@
 
         <div class="content-wrap">
           <main>
-            <section class="sidebar-info">
-              <p>Hello Evano 👋🏼</p>
-              <div class="customers">
-                <h1 class="customers__title">All Customers</h1>
-                <p class="customers__description">Active Members</p>
-                <div class="customers__search">
-                  <input type="text" name="search" />
+            <p class="content-label">Hello Evano 👋🏼</p>
+            <section class="customers">
+                <div class="customers__inner">
+                  <div>
+                    <h1 class="customers__title">All Customers</h1>
+                  <p class="customers__description">Active Members</p>
+                  </div>
+                  
+                  <div class="search-field">
+                    <svg width="24" height="24" class="search-field__icon">
+                    <use href="./src/img/icons.svg#icon-search"></use>
+                  </svg>
+                    <input type="text" name="search" class="search-field__input" placeholder="Search"/>
+                  </div>
                 </div>
+                
                 <table class="customers__table">
                   <thead>
                     <tr>
@@ -194,19 +202,19 @@
                   <p class="pagination__data">Showing data 1 to 8 of  256K entries</p>
                   <div>
                     <ul class="pagination__list">
-                      <li class="pagination__item"><button type="button"><</button></li>
-                      <li class="pagination__item"><button type="button">1</button></li>
-                      <li class="pagination__item"><button type="button">2</button></li>
-                      <li class="pagination__item"><button type="button">3</button></li>
-                      <li class="pagination__item"><button type="button">4</button></li>
-                      <li class="pagination__item"><button type="button">...</button></li>
-                      <li class="pagination__item"><button type="button">40</button></li>
-                      <li class="pagination__item"><button type="button">></button></li>
+                      <li class="pagination__item"><button type="button" class="pagination__button"><</button></li>
+                      <li class="pagination__item"><button type="button" class="pagination__button pagination__button--current">1</button></li>
+                      <li class="pagination__item"><button type="button" class="pagination__button">2</button></li>
+                      <li class="pagination__item"><button type="button" class="pagination__button">3</button></li>
+                      <li class="pagination__item"><button type="button" class="pagination__button">4</button></li>
+                      <li class="pagination__item"><button type="button" class="pagination__button pagination__button--no-background">...</button></li>
+                      <li class="pagination__item"><button type="button" class="pagination__button">40</button></li>
+                      <li class="pagination__item"><button type="button" class="pagination__button">></button></li>
 
                     </ul>
                   </div>
                 </div>
-              </div>
+            
             </section>
           </main>
         </div>
