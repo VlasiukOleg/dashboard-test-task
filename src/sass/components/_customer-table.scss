@@ -1,0 +1,74 @@
+.customers__table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+  margin-top: 40px;
+
+  @media screen and (max-width: 1290px) {
+    font-size: 12px;
+  }
+
+  @media screen and (max-width: 725px) {
+    font-size: 10px;
+    margin-top: 20px;
+  }
+
+  th {
+    text-align: left;
+    padding: 14px 0;
+    border-bottom: 1px solid $tableBorderColor;
+    color: $primaryGreyColor;
+
+    @media screen and (max-width: 725px) {
+      padding: 10px 5px;
+    }
+  }
+
+  td {
+    padding: 20px 0;
+    border-bottom: 1px solid $tableBorderColor;
+
+    @media screen and (max-width: 725px) {
+      padding: 10px 5px;
+    }
+  }
+
+  thead > tr > th:nth-child(1) {
+    width: 172px;
+  }
+
+  thead > tr > th:nth-child(2) {
+    width: 131px;
+  }
+
+  thead > tr > th:nth-child(3) {
+    width: 156px;
+  }
+
+  thead > tr > th:nth-child(4) {
+    width: 207px;
+
+    @media screen and (max-width: 1290px) {
+      width: 160px;
+    }
+  }
+
+  thead > tr > th:nth-child(5) {
+    width: 140px;
+  }
+}
+
+.customer__status--active {
+  @extend %button;
+  color: $activeBtnColor;
+  background-color: $activeBtnBgColor;
+  border: $borderActiveBtn;
+}
+
+.customer__status--inActive {
+  @extend %button;
+  padding: 4px 12px;
+  color: $inActiveBtnColor;
+  background-color: $inActiveBtnBgColor;
+  border: $borderInActiveBtn;
+}

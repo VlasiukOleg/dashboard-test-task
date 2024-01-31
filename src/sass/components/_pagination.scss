@@ -1,0 +1,32 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pagination__data {
+  color: $primaryGreyColor;
+
+  @media screen and (max-width: 725px) {
+    font-size: 12px;
+  }
+}
+
+.pagination__list {
+  display: flex;
+  gap: 12px;
+}
+
+.pagination__button {
+  @extend %paginationBtn;
+}
+
+.pagination__button--current {
+  background-color: $activeNavLinkBgColor;
+  color: $primaryBgColor;
+}
+
+.pagination__button--no-background {
+  background-color: transparent;
+  border: none;
+}
