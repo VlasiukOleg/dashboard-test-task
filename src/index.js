@@ -46,9 +46,23 @@ const onSearchInput = e => {
       searchCustomers.push(customer);
     }
 
-    console.log(searchCustomers);
     tableBody.innerHTML = makeTableRowCustomersMarkUp(searchCustomers);
   });
 };
 
 searchInput.addEventListener('input', onSearchInput);
+
+// !MObile-menu
+
+const menuBtn = document.querySelector('.menu-button');
+const mobileMenu = document.querySelector('.dashboard-header');
+const menuBackdrop = document.querySelector('.menu-backdrop');
+
+const onMobileMenuOpen = () => {
+  menuBtn.classList.toggle('is-open');
+  mobileMenu.classList.toggle('is-open');
+  menuBackdrop.classList.toggle('is-open');
+  document.body.classList.toggle('no-scroll');
+};
+
+menuBtn.addEventListener('click', onMobileMenuOpen);

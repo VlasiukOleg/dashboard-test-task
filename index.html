@@ -10,6 +10,14 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css
+
+
+
+"
+    />
     <link rel="stylesheet" href="./src/sass/main.css" />
   </head>
   <body>
@@ -44,10 +52,9 @@
                     Product
                   </div>
                   <svg width="16" height="16">
-                    <use
-                      href="./src/img/icons.svg#icon-chevron-right"
-                    ></use></svg
-                ></a>
+                    <use href="./src/img/icons.svg#icon-chevron-right"></use>
+                  </svg>
+                </a>
               </li>
               <li class="sidebar-nav__item">
                 <a class="sidebar-nav__link sidebar-nav__link--current" href="#"
@@ -60,8 +67,9 @@
                   <svg width="16" height="16">
                     <use
                       href="./src/img/icons.svg#icon-chevron-right-current"
-                    ></use></svg
-                ></a>
+                    ></use>
+                  </svg>
+                </a>
               </li>
               <li class="sidebar-nav__item">
                 <a class="sidebar-nav__link" href="#"
@@ -72,10 +80,9 @@
                     Income
                   </div>
                   <svg width="16" height="16">
-                    <use
-                      href="./src/img/icons.svg#icon-chevron-right"
-                    ></use></svg
-                ></a>
+                    <use href="./src/img/icons.svg#icon-chevron-right"></use>
+                  </svg>
+                </a>
               </li>
               <li class="sidebar-nav__item">
                 <a class="sidebar-nav__link" href="#"
@@ -86,10 +93,9 @@
                     Promote
                   </div>
                   <svg width="16" height="16">
-                    <use
-                      href="./src/img/icons.svg#icon-chevron-right"
-                    ></use></svg
-                ></a>
+                    <use href="./src/img/icons.svg#icon-chevron-right"></use>
+                  </svg>
+                </a>
               </li>
               <li class="sidebar-nav__item">
                 <a class="sidebar-nav__link" href="#"
@@ -100,10 +106,9 @@
                     Help
                   </div>
                   <svg width="16" height="16">
-                    <use
-                      href="./src/img/icons.svg#icon-chevron-right"
-                    ></use></svg
-                ></a>
+                    <use href="./src/img/icons.svg#icon-chevron-right"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
           </nav>
@@ -217,6 +222,16 @@
         </div>
       </div>
     </div>
+
+    <!-- Mobile-menu -->
+    <button class="menu-button" type="button">
+      <svg>
+        <use href="./src/img/icons.svg#icon-menu" class="icon-menu"></use>
+        <use href="./src/img/icons.svg#icon-cross" class="icon-cross"></use>
+      </svg>
+    </button>
+    <div class="menu-backdrop"></div>
+
     <script type="module" src="./src/index.js"></script>
   </body>
 </html>
